@@ -30,8 +30,8 @@ This project consists of the following components:
 web_scraping_project/
 │
 ├── data/
-│   ├── raw/                  # Folder for raw data
-│   └── processed/            # Folder for cleaned data
+│   ├── raw/                  # Folder for raw data (Files are encrypted for privacy and security)
+│   └── processed/            # Folder for cleaned data (Files are encrypted for privacy and security)
 │
 ├── docs/                     # Documentation
 │
@@ -39,6 +39,7 @@ web_scraping_project/
 │   └── folder_structure.txt  # Folder structure
 │
 ├── scripts/
+│   ├── utility/              # Config modules
 │   ├── scraper.py            # Script for web scraping
 │   ├── data_cleaner.py       # Script for data cleaning
 │   └── main.py               # Main script that orchestrates the scraping and cleaning

@@ -107,7 +107,7 @@ def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
 
     # Construct the absolute path
-    csv_path = os.path.join(script_dir, "../data/raw/charities_list.csv")
+    csv_path = os.path.join(script_dir, "../data/raw/data_list.csv")
 
     save_to_csv(all_charities, csv_path)
 
