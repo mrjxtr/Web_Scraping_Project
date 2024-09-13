@@ -13,6 +13,7 @@ The following technologies and libraries are utilized in this project:
 - **Requests**: A user-friendly library to make HTTP requests, allowing us to retrieve web pages for scraping.
 - **BeautifulSoup**: A parsing library that helps in navigating and extracting data from HTML and XML files.
 - **python-dotenv**: A library to manage environment variables securely, ensuring sensitive data (like API keys or credentials) is kept out of the source code.
+- **Cryptography**: A library for secure encryption and decryption of data.
 
 ## Project Components
 
@@ -24,31 +25,35 @@ This project consists of the following components:
 
 3. **Main Script (`main.py`)**: The primary orchestration script that sequentially runs both the web scraper and data cleaning scripts, managing the entire data extraction and preparation pipeline.
 
+4. **Encryption Script (`config.py`)**: A configuration module where the code for encryption and decryption of sensitive data is stored.
+
+5. **Environment File (`.env`)**: A file containing sensitive data like API keys, database credentials, and links to websites used as data source for the scraper.
+
 ## Project Structure
 
 ```txt
-web_scraping_project/
+Web_Scraping_Project/
 │
 ├── data/
-│   ├── raw/                  # Folder for raw data (Files are encrypted for privacy and security)
-│   └── processed/            # Folder for cleaned data (Files are encrypted for privacy and security)
+│   ├── raw/                  <- Folder for raw data (Files are encrypted for privacy and security)
+│   └── processed/            <- Folder for cleaned data (Files are encrypted for privacy and security)
 │
-├── docs/                     # Documentation
+├── docs/                     <- Documentation
 │
 ├── references/
-│   └── folder_structure.txt  # Folder structure
+│   └── folder_structure.txt  <- Folder structure
 │
 ├── scripts/
-│   ├── utility/              # Config modules
-│   ├── data_cleaner.py       # Script for data cleaning
-│   ├── main.py               # Main script that orchestrates the scraping and cleaning
-│   └── scraper.py            # Script for web scraping
+│   ├── utility/              <- Config modules
+│   ├── data_cleaner.py       <- Script for data cleaning
+│   ├── main.py               <- Main script that orchestrates the scraping and cleaning
+│   └── scraper.py            <- Script for web scraping
 │
-├── .env                      # Environment file for sensitive data like API keys, etc. (Excluded from version control)
-├── .gitignore                # Git ignore file
-├── requirements.txt          # Project requirements
-├── LICENCE.txt               # Open-source license
-└── README.md                 # Project documentation
+├── .env                      <- Environment file for sensitive data like API keys, etc. (Excluded from version control)
+├── .gitignore                <- Git ignore file
+├── requirements.txt          <- Project requirements
+├── LICENCE.txt               <- Open-source license
+└── README.md                 <- Project documentation
 ```
 
 ## Usage
@@ -59,7 +64,18 @@ web_scraping_project/
    pip install -r requirements.txt
    ```
 
-2. **Run the Main Script**: Execute the main script to perform web scraping and data cleaning:
+2. **Create a `.env` file**: Create a `.env` file in the root directory of the project to store encryption/decryption keys, links to websites used as data source for the scraper.
+
+   ```.env
+   # Web Scraping Configuration
+   BASE_URL=https://www.website/you/want/to/scrape/
+   REFERER_URL=https://www.home/page/of/website/
+
+   # Encryption/Decryption Key (Use the key generator in `config.py` script)
+   ENC_KEY=*******************************************=
+   ```
+
+3. **Run the Main Script**: Execute the main script to perform web scraping and data cleaning:
 
    ```bash
    python scripts/main.py
