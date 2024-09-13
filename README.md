@@ -27,7 +27,7 @@ This project consists of the following components:
 
 4. **Encryption Script (`config.py`)**: A configuration module where the code for encryption and decryption of sensitive data is stored.
 
-5. **Environment File (`.env`)**: A file containing sensitive data like API keys, database credentials, and links to websites used as data source for the scraper.
+5. **Environment File (`.env`)**: A file containing sensitive data like encryption/decryption keys, links to websites used as data source for the scraper. *(Excluded from version control)*
 
 ## Project Structure
 
@@ -49,7 +49,7 @@ Web_Scraping_Project/
 │   ├── main.py               <- Main script that orchestrates the scraping and cleaning
 │   └── scraper.py            <- Script for web scraping
 │
-├── .env                      <- Environment file for sensitive data like API keys, etc. (Excluded from version control)
+├── .env                      <- Environment file for sensitive data. (Excluded from version control)
 ├── .gitignore                <- Git ignore file
 ├── requirements.txt          <- Project requirements
 ├── LICENCE.txt               <- Open-source license
@@ -69,7 +69,7 @@ Web_Scraping_Project/
    ```.env
    # Web Scraping Configuration
    BASE_URL=https://www.website/you/want/to/scrape/
-   REFERER_URL=https://www.home/page/of/website/
+   REFERER_URL=https://www.home/page/of/website/ 
 
    # Encryption/Decryption Key (Use the key generator in `config.py` script)
    ENC_KEY=*******************************************=
@@ -84,3 +84,12 @@ Web_Scraping_Project/
 ## Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+📝 **Let's Connect!:**
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mrjxtr)
+[![Upwork](https://img.shields.io/badge/-Upwork-6fda44?style=flat-square&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~01f2fd0e74a0c5055a?mp_source=share)
+[![Facebook](https://img.shields.io/badge/-Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/mrjxtr)
+[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/mrjxtr)
+[![Threads](https://img.shields.io/badge/-Threads-000000?style=flat-square&logo=threads&logoColor=white)](https://www.threads.net/@mrjxtr)
+[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white)](https://twitter.com/mrjxtr)
+[![Gmail](https://img.shields.io/badge/-Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:youremail@gmail.com)
