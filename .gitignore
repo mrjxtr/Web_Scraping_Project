@@ -1,5 +1,6 @@
 # Sensitive data
-data/raw/charities_list-v0.1.csv
+data/raw/data_list-v0.1.csv
+data/processed/cleaned_data_list-v0.1.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

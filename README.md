@@ -1,5 +1,13 @@
 # Web Scraping Project
 
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mrjxtr)
+[![Upwork](https://img.shields.io/badge/-Upwork-6fda44?style=flat-square&logo=upwork&logoColor=white)](https://www.upwork.com/freelancers/~01f2fd0e74a0c5055a?mp_source=share)
+[![Facebook](https://img.shields.io/badge/-Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/mrjxtr)
+[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/mrjxtr)
+[![Threads](https://img.shields.io/badge/-Threads-000000?style=flat-square&logo=threads&logoColor=white)](https://www.threads.net/@mrjxtr)
+[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white)](https://twitter.com/mrjxtr)
+[![Gmail](https://img.shields.io/badge/-Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:youremail@gmail.com)
+
 ## Overview
 
 This project aims to build a web scraping pipeline for extracting data from static websites with pagination based on alphabetical letters (e.g., A, B, C, D). The pipeline is designed to extract data, organize it into a DataFrame, and ensure that it is clean and ready for use at the end of the process. The scripts are written in Python to be easily modifiable, reusable, and maintainable. Additionally, any potentially sensitive data is handled securely to protect privacy and data integrity.
@@ -80,6 +88,30 @@ Web_Scraping_Project/
    ```bash
    python scripts/main.py
    ```
+
+## Output
+
+The output of the `main.py` script will contain the raw scraped data in the [`data/raw/`](data/raw/) folder, and the cleaned data in the [`data/processed/`](data/processed/) folder both in CSV format.
+
+![csv_output](docs/output.png)
+
+>**The output will be encrypted just like in the image bellow. I added this feature to ensure the data is safe for privacy and security.**
+
+![encrypted_output](docs/encrypted_data.png)
+
+**To manually decrypt the csv file** use [`scripts/utility/decrypter.py`](scripts/utility/decrypter.py)
+
+**To manually encrypt the csv file** use [`scripts/utility/encrypter.py`](scripts/utility/encrypter.py)
+
+> For both of these scripts, you just need to change the `<FILE_TO_DECRYPT>` to the path or file you want to decrypt and `<FILE_TO_ENCRYPT>` to the path or file you want to encrypt.
+
+```python
+file_path = os.path.join(
+    script_dir, "../../data/processed/<FILE_TO_DECRYPT>.csv"
+)  # path to the file you want to decrypt
+```
+
+>~~*I am sure there is a better solution than this but for now this will do.*~~
 
 ## Contributing
 
