@@ -35,6 +35,10 @@ This project consists of the following components:
 
 4. **Encryption Script (`config.py`)**: A configuration module where the code for encryption and decryption of sensitive data is stored.
 
+   1. **Manual Encryption Script (`encrypter.py`)**: A script for manual data encryption using the Encrypt class in the `config.py` module.
+
+   2. **Manual Decryption Script (`decrypter.py`)**: A script for manual data decryption using the Encrypt class in the `config.py` module.
+
 5. **Environment File (`.env`)**: A file containing sensitive data like encryption/decryption keys, links to websites used as data source for the scraper. *(Excluded from version control)*
 
 ## Project Structure
